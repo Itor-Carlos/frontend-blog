@@ -1,8 +1,9 @@
+import { Post } from "./app/components/Post"
 
 function App() {
   return (
     <>
-      <h1>Blog's Frontend</h1>
+      <Post/>
     </>
   )
 }
