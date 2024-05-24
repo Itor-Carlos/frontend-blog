@@ -25,21 +25,3 @@ export const PostContent = styled.div`
     }
 `
 
-export const PostActions = styled.div`
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #e1e9ee;
-    padding-top: 10px;
-
-    button{
-        background: none;
-        border: none;
-        color: #0073b1;
-        font-size: 14px;
-        cursor: pointer;
-    }
-
-    button:hover{
-        text-decoration: underline;
-    }
-`
