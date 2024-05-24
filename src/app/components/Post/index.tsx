@@ -8,7 +8,7 @@ export function Post(){
                 <User/>
             </PostHeader>
             <PostContent>
-                <small>O empenho em analisar a revolução dos costumes apresenta tendências no sentido de aprovar a manutenção dos níveis de motivação departamental.</small>
+                <p>O empenho em analisar a revolução dos costumes apresenta tendências no sentido de aprovar a manutenção dos níveis de motivação departamental.</p>
             </PostContent>
             <PostActions>
                 <button>Curtir</button>

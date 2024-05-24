@@ -1,26 +1,27 @@
 import styled from "styled-components";
 
-export const PostContainer = styled.div`
+export const PostContainer = styled.main`
     background-color: #fff;
-    border: 1px solid #e1e9ee;
+    border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    width: 500px;
+    width: 700px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 `
 
 
 export const PostHeader = styled.div`
-    display: flex;
-    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 `
 
 export const PostContent = styled.div`
-    margin: 20px 0;
-    color: #333;
-
-    small{
-        font-size: 14px;
+    p{
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
     }
 `
 
