@@ -1,10 +1,14 @@
 import { HeaderContainer } from "./styles"
 
-export function Header(){
+interface HeaderProps{
+    title: string
+}
+
+export function Header({title = "Blog Exemplo"}: HeaderProps){
     return (
         <HeaderContainer>
             <div className="header-div">
-                <div className="logo">Blog Exemplo</div>
+                <div className="logo">{title}</div>
                 <nav>
                     <a href="/">Início</a>
                     <a href="#">Sobre</a>

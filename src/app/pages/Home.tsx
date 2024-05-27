@@ -4,7 +4,7 @@ import { Post } from "../components/Post";
 export function Home(){
     return (
     <>
-        <Header/>
+        <Header title="Study Blog"/>
         <Post/>
     </>
     )
