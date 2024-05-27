@@ -6,7 +6,7 @@ export function Header(){
             <div className="header-div">
                 <div className="logo">Blog Exemplo</div>
                 <nav>
-                    <a href="#">Início</a>
+                    <a href="/">Início</a>
                     <a href="#">Sobre</a>
                     <a href="#">Login</a>
                 </nav>
