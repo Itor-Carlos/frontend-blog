@@ -1,12 +1,12 @@
-import { Header } from "./app/components/Header"
-import { Post } from "./app/components/Post"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
   return (
-      <>
-        <Header/>
-        <Post/>
-      </>
+     <Router>
+        <Routes>
+            <Route path="/"/>
+        </Routes>
+     </Router>
   )
 }
 
