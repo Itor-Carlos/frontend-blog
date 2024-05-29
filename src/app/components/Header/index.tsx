@@ -12,7 +12,7 @@ export function Header({title = "Blog Exemplo"}: HeaderProps){
                 <nav>
                     <a href="/">Início</a>
                     <a href="#">Sobre</a>
-                    <a href="#">Login</a>
+                    <a href="/login">Login</a>
                 </nav>
             </div>
         </HeaderContainer>
