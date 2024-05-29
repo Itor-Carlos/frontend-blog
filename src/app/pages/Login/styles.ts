@@ -13,8 +13,8 @@ export const LoginContainer = styled.div`
 
     h1{
         margin-bottom: 20px;
-        font-size: 24px;
-        color: #333;
+        font-size: 32px;
+        color: #ff6347;
     }
 
     label{
