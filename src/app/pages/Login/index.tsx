@@ -1,5 +1,5 @@
-import React from "react";
 import { ButtonContainer, LoginContainer } from "./styles";
+import { Button } from "../../components/Button";
 
 export function LoginPage(){
     return (
@@ -11,8 +11,8 @@ export function LoginPage(){
                 <label>Senha:</label>
                 <input type="password" id="password" name="password" required />
                 <ButtonContainer>
-                    <button type="submit">Entrar</button>
-                    <button type="submit">Registrar</button>
+                    <Button label="Login"/>
+                    <Button label="Registrar" />
                 </ButtonContainer>
             </form>
         </LoginContainer>
