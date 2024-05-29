@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
     :root {
-        font-family: Arial, sans-serif;
+        font-family: 'Lato';
         background-color: #f9f9f9;
         margin: 0;
         padding: 0;
