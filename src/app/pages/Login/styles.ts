@@ -47,6 +47,10 @@ export const LoginContainer = styled.div`
     button:hover{
         background-color: #e55337;
     }
+
+    a{
+        width: 100%;
+    }
 `
 
 export const ButtonContainer = styled.div`

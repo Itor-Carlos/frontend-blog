@@ -12,7 +12,7 @@ export function LoginPage(){
                 <input type="password" id="password" name="password" required />
                 <ButtonContainer>
                     <Button label="Login"/>
-                    <Button label="Registrar" />
+                    <Button link="/cadastrar-usuario" label="Registrar" />
                 </ButtonContainer>
             </form>
         </LoginContainer>
