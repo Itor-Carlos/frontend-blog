@@ -20,7 +20,7 @@ export const FormUserContainer = styled.div`
     input{
         width: calc(100% - 20px);
         padding: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         border: 1px solid #ddd;
         border-radius: 4px;
     }
@@ -50,6 +50,13 @@ export const FormUserContainer = styled.div`
 
     button:hover{
         background-color: #e55337;
+    }
+
+    div.errorForm{
+        color: red;
+        font-size: 14px;
+        margin-bottom: 14px;
+
     }
 
 `
