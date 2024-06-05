@@ -1,10 +1,14 @@
 import React from "react";
 import { UserInfo } from "./styles";
 
-export function User(){
+interface UserProps{
+    titulo: string;
+}
+
+export function User({titulo}: UserProps){
     return (
         <UserInfo>
-            <p>Tempo desde a postagem</p>
+            <p>{titulo}</p>
         </UserInfo>
     )
 }
