@@ -1,14 +1,20 @@
 import { User } from "../User";
 import { PostContainer, PostContent, PostHeader } from "./styles";
 
-export function Post(){
+
+interface PostProps{
+    titulo: string;
+    conteudo: string;
+}
+
+export function Post({titulo, conteudo}: PostProps){
     return (
         <PostContainer>
             <PostHeader>
-                <User/>
+                <User titulo={titulo}/>
             </PostHeader>
             <PostContent>
-                <p>O empenho em analisar a revolução dos costumes apresenta tendências no sentido de aprovar a manutenção dos níveis de motivação departamental.</p>
+                <p>{conteudo}</p>
             </PostContent>
         </PostContainer>
     )
