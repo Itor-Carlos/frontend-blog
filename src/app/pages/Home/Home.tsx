@@ -19,7 +19,7 @@ export function Home(){
     <>
         {
             posts.map((item) => (
-                <Post key={item.id} titulo={item.titulo} conteudo={item.conteudo} />
+                <Post key={item.id} id={item.id} titulo={item.titulo} conteudo={item.conteudo} />
               ))
         }
     </>

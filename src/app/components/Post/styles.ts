@@ -25,3 +25,23 @@ export const PostContent = styled.div`
     }
 `
 
+export const ButtonContainerPost = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    button {
+        padding: 10px;
+        background-color: #ff6347;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 12px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    button:hover {
+        background-color: #e55337;
+    }
+`;
