@@ -9,6 +9,8 @@ export const LoginContainer = styled.div`
     width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center; 
+    margin: auto;
+    margin-top: 8px;
 
 
     h1{

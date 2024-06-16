@@ -8,7 +8,9 @@ export const FormUserContainer = styled.div`
     padding: 40px;
     width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
+    margin: auto;
+    margin-top: 8px;
+
     label{
         display: block;
         font-size: 14px;

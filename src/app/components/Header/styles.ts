@@ -6,6 +6,7 @@ export const HeaderContainer = styled.div`
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
+    min-width: 720px;
 
     .header-div{
         width: 90%;
