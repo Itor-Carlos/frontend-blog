@@ -2,6 +2,13 @@ import React from 'react';
 
 import { AboutContainer, Title, Description, List, ListItem, Footer } from './styles';
 
+
+const funcionalidades = [
+    "Funcionalidade 1: Criação de post",
+    "Funcionalidade 2: Edição de posts",
+    "Funcionalidade 3: Exclusão de posts"
+];
+
 export const About = () => {
     return (
         <AboutContainer>
@@ -11,9 +18,7 @@ export const About = () => {
                 Desenvolvida para praticar React.js, TypeScript e Styled Components.
             </Description>
             <List>
-                <ListItem>Funcionalidade 1: Criação de posts</ListItem>
-                <ListItem>Funcionalidade 2: Edição de posts</ListItem>
-                <ListItem>Funcionalidade 3: Exclusão de posts</ListItem>
+                {funcionalidades.map((funcionalidade => <ListItem>{funcionalidade}</ListItem>))}
             </List>
             <Footer>
                 &copy; 2024 Projeto de Posts. Todos os direitos reservados.
