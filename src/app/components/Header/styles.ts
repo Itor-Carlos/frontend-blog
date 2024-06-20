@@ -20,17 +20,5 @@ export const HeaderContainer = styled.div`
         font-size: 24px;
         color: #ff6347;
         font-weight: bold;
-    }
-
-    nav a {
-        color: #fff;
-        margin-left: 15px;
-        text-decoration: none;
-        font-size: 14px;
-    }
-
-    nav a:hover {
-        text-decoration: underline;
-    }   
-
+    } 
 `

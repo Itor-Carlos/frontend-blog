@@ -1,19 +1,23 @@
+import { NavBarItem } from "../../types/NavBar"
+import { NavBar } from "../NavBar"
 import { HeaderContainer } from "./styles"
 
 interface HeaderProps{
     title: string
 }
 
+const headerNavItems: NavBarItem[] = [
+    {href: "/", label:"Início"},
+    {href: "/sobre", label:"Sobre"},
+    {href: "/login", label:"Login"},
+]
+
 export function Header({title = "Blog Exemplo"}: HeaderProps){
     return (
         <HeaderContainer>
             <div className="header-div">
                 <div className="logo">{title}</div>
-                <nav>
-                    <a href="/">Início</a>
-                    <a href="/sobre">Sobre</a>
-                    <a href="/login">Login</a>
-                </nav>
+                <NavBar navBarItems={headerNavItems}/>
             </div>
         </HeaderContainer>
     )
