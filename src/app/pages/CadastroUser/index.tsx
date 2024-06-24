@@ -48,17 +48,17 @@ export function CadastroUser(){
                     <h1>Cadastrar usuário</h1>
                     <Form>
                         <div>
-                            <label htmlFor="name">Nome:</label>
+                            <label htmlFor="name">Nome</label>
                             <Field type="text" name="nome" />
                             <ErrorMessage className="errorForm" name="nome" component={"div"} />
                         </div>
                         <div>
-                            <label htmlFor="password">Senha:</label>
+                            <label htmlFor="password">Senha</label>
                             <Field type="password" name="senha" />
                             <ErrorMessage className="errorForm" name="senha" component={"div"} />
                         </div>
                         <div>
-                            <label htmlFor="email">Email:</label>
+                            <label htmlFor="email">Email</label>
                             <Field type="email" name="email" />
                             <ErrorMessage className="errorForm" name="email" component="div" />
                         </div>
