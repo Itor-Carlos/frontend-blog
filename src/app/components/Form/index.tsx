@@ -2,6 +2,7 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { FormContainer } from "./styles";
 import * as Yup from 'yup';
+import React from "react";
 
 interface Field{
     label: string;
@@ -27,13 +28,14 @@ export const FormComponent = ({title,fields, handleSubmit, initialValues, valida
             <FormContainer>
                 <Form>
                     <h1>{title}</h1>
-                    {fields.map((item) => 
-                        <div className="field">
-                            <label>{item.label}</label>
-                            <Field type={item.type} name={item.name}/>
-                            <ErrorMessage className="errorForm" name={item.name} component={"div"} />
-                        </div>)
-                    }
+                    {React.Children.toArray(
+                        fields.map((item) => 
+                            <div className="field">
+                                <label>{item.label}</label>
+                                <Field type={item.type} name={item.name}/>
+                                <ErrorMessage className="errorForm" name={item.name} component={"div"} />
+                            </div>)
+                    )}
                     <button type="submit">Enviar</button>
                 </Form>
             </FormContainer>
