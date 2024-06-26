@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
-interface ButtonProps{
-    onClick?: () => void;
+interface ButtonProps {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    onClick?: (object?: any) => void;
     label: React.ReactNode;
     disabled?: boolean;
     link?: string;
