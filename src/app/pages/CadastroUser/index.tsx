@@ -1,13 +1,32 @@
-import { FormUserContainer } from "./styles";
-import { Form, Formik, Field, ErrorMessage} from "formik";
+// import { Formik, Field, ErrorMessage} from "formik";
 import * as Yup from 'yup';
 import axios from "axios";
+import { FormComponent } from "../../components/Form";
 
 interface UserFormValues {
     nome: string;
     email: string;
     senha: string;
   }
+
+const fields = [
+    {
+        label: "Nome",
+        type: "text",
+        name: "nome"
+    },
+    {
+        label: "Email",
+        type: "email",
+        name: "email",
+    },
+    {
+        label: "Senha",
+        type: "password",
+        name: "senha"
+    }
+]
+
 
 export function CadastroUser(){
 
@@ -39,34 +58,12 @@ export function CadastroUser(){
     }
 
     return (
-        <Formik
+        <FormComponent 
+            title="Cadastrar Usuario" 
+            fields={fields}
+            handleSubmit={handleSubmit}
             initialValues={initialValues}
             validationSchema={validationSchema}
-            onSubmit={handleSubmit}
-        >
-            <FormUserContainer>
-                    <h1>Cadastrar usuário</h1>
-                    <Form>
-                        <div>
-                            <label htmlFor="name">Nome</label>
-                            <Field type="text" name="nome" />
-                            <ErrorMessage className="errorForm" name="nome" component={"div"} />
-                        </div>
-                        <div>
-                            <label htmlFor="password">Senha</label>
-                            <Field type="password" name="senha" />
-                            <ErrorMessage className="errorForm" name="senha" component={"div"} />
-                        </div>
-                        <div>
-                            <label htmlFor="email">Email</label>
-                            <Field type="email" name="email" />
-                            <ErrorMessage className="errorForm" name="email" component="div" />
-                        </div>
-                        <div>
-                            <button type="submit">Enviar</button>
-                        </div>
-                    </Form>
-            </FormUserContainer>
-        </Formik>
+        />
     )
 }
